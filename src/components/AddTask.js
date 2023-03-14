@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-export const AddTask = ({tasks, setTasks, count, setCount, inputValue, setInputValue, toEdit, setToEdit, currIndex, setCurrIndex}) => {
+export const AddTask = ({tasks, setTasks, count, setCount, inputValue, setInputValue, toEdit, setToEdit, currIndex}) => {
     
     const handleChange = (event) => {
         setInputValue(event.target.value)
