@@ -2,11 +2,10 @@ import editIcon from "../assets/edit-icon-2.png";
 import deleteIcon from "../assets/delete-icon.png";
 
 
-export const TaskList = ({tasks, setTasks, count, setCount, setInputValue, setToEdit, setCurrIndex}) => {
+export const TaskList = ({tasks, setTasks, setInputValue, setToEdit, setCurrIndex}) => {
 
   const handleClearAll = () => {
     setTasks([]);
-    setCount(0);
   }
 
   const handleEdit = (item, index) => {
@@ -17,7 +16,6 @@ export const TaskList = ({tasks, setTasks, count, setCount, setInputValue, setTo
 
   const handleDelete = (itemToDelete) => {
     setTasks(tasks.filter((task) => task !== itemToDelete));
-    setCount(count - 1);
   }
 
   return (
@@ -25,7 +23,7 @@ export const TaskList = ({tasks, setTasks, count, setCount, setInputValue, setTo
         <p className="top">
             <span>
                 <span className="title">Tasks</span>
-                <span className="count">{count}</span>
+                <span className="count">{tasks.length}</span>
             </span>
             <span onClick={handleClearAll} className="clear">Clear All</span>
         </p>

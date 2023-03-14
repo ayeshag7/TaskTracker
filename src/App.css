@@ -16,7 +16,7 @@
 
 .gradientOne{
     background: linear-gradient(90deg, #F4B322 0%, #EAA871 100%);
-    }
+}
     
 .gradientTwo {
     background: linear-gradient(235deg, #F4B322 0%, #F4B322 50%, #EAA871 50%, #EAA871 100%),
@@ -24,7 +24,7 @@
                 linear-gradient(235deg, #FEFDEF 0%, #FEFDEF 40%, #8F9EB6 40%, #8F9EB6 60%, #EAA871 60%, #EAA871 80%, #F4B322 80%, #F4B322 100%),
                 linear-gradient(125deg, #FEFDEF 0%, #FEFDEF 50%, #F58F8F 50%, #F58F8F 100%);
     background-blend-mode: soft-light, overlay, lighten, screen;
-    }
+}
       
 .gradientThree{
     background: linear-gradient(125deg, #FEFDEF 0%, #000000 100%), linear-gradient(200deg, #F58F8F 0%, #F58F8F 50%, #8F9EB6 calc(50% + 1px), #8F9EB6 60%, #F4B322 calc(60% + 1px), #F4B322 75%, #FEFDEF calc(75% + 1px), #FEFDEF 100%), linear-gradient(113deg, #F58F8F 0%, #F58F8F 40%, #8F9EB6 calc(40% + 1px), #8F9EB6 50%, #F4B322 calc(50% + 1px), #F4B322 70%, #FEFDEF calc(70% + 1px), #FEFDEF 100%);

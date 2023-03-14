@@ -1,11 +1,7 @@
-export const AddTask = ({tasks, setTasks, count, setCount, inputValue, setInputValue, toEdit, setToEdit, currIndex}) => {
+export const AddTask = ({tasks, setTasks, inputValue, setInputValue, toEdit, setToEdit, currIndex}) => {
     
     const handleChange = (event) => {
         setInputValue(event.target.value)
-    };
-
-    const handleReset = () => {
-        setInputValue("");
     };
 
     const handleSubmit = (event) => {
@@ -17,11 +13,10 @@ export const AddTask = ({tasks, setTasks, count, setCount, inputValue, setInputV
                 name: inputValue,
                 time: `${now.toLocaleTimeString()} ${now.toLocaleDateString()}`
             }
-            handleReset();
+            setInputValue("");
             setTasks([...tasks, task]);
-            setCount(count + 1);
         } else {
-            handleReset();
+            setInputValue("");
             setTasks(prevTasks => {
                 const newTasks = [...prevTasks]; 
                 newTasks[currIndex] = {
