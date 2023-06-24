@@ -27,3 +27,9 @@ This will start a development server at http://localhost:3000, where you can vie
 
 ## Preview
 <img width="878" alt="Screenshot 2023-03-14 175824" src="https://user-images.githubusercontent.com/106478752/225008423-8bb63829-382e-4a31-a0fa-a8447555db4d.png">
+
+
+## Project Demo
+Take a look at the site by clicking the link below:
+<br>
+https://tasktracker-ss.netlify.app/
